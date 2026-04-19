@@ -1,19 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phill Moore - Digital Forensics & Incident Response Professional">
+    <title>Phill Moore | DFIR Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .project-card a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .social-btn svg {
+            margin-right: 8px;
+        }
+
+        .contributions {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contributions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .contributions li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+        }
+
+        .contributions li:last-child {
+            border-bottom: none;
+        }
+
+        .contributions li:before {
+            content: "▹";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>RandomAccess3's Github</h1>
-<b></b><p>This is my Github.</p></b>
-<h2>Project Explanation</h2>
-<ul>
-  <li>Keychain Parser - Perl script that parses the output of the "security" cli application on OS X into a more readable format</li>
-</ul>
-<br
-<br>I intend to put some of my research and the scripts that come out of it here. 
-<br>
-<h2>Projects to work on</h2>
-<ul>
-  <li>Plist parser - I've noticed that items like the recentitems plist contains references to the file path and volume name. Further research is required to determine if dates/times exist within the structure</li>
-  
-</ul>
+    <div class="container">
+        <header>
+            <h1>Phill Moore</h1>
+            <p class="subtitle">Digital Forensics & Incident Response Professional</p>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>Top Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>ThisWeekIn4n6</h3>
+                        <p>Weekly digest of digital forensics and incident response news, tools, and research.</p>
+                        <a href="https://thisweekin4n6.com" target="_blank">Visit Site →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>ThinkDFIR</h3>
+                        <p>Digital forensics resources, research, and insights for the DFIR community.</p>
+                        <a href="https://thinkdfir.com" target="_blank">Visit Site →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>RULER Project</h3>
+                        <p>Really Useful Logging and Event Repository - documenting forensic artifacts in application logs.</p>
+                        <a href="https://ruler-project.github.io/ruler-project/" target="_blank">Visit Project →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Awesome-BEC</h3>
+                        <p>Curated repository of offensive and defensive resources for Business Email Compromise investigations.</p>
+                        <a href="https://github.com/randomaccess3/Awesome-BEC" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Connect With Me</h2>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/phill-moore" target="_blank" class="social-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+
+                    <a href="https://twitter.com/phillmoore" target="_blank" class="social-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        X (Twitter)
+                    </a>
+
+                    <a href="https://infosec.exchange/@Phillmoore" target="_blank" class="social-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/>
+                        </svg>
+                        Mastodon
+                    </a>
+
+                    <a href="https://bsky.app/profile/phillmoore.bsky.social" target="_blank" class="social-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
+                        </svg>
+                        BlueSky
+                    </a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>About My Work</h2>
+                <div class="contributions">
+                    <p style="margin-bottom: 20px; color: #555;">I'm a digital forensics and incident response professional based in Sydney, Australia, with a passion for sharing knowledge and building community resources.</p>
+
+                    <h3 style="color: #2c3e50; margin-top: 20px; margin-bottom: 15px;">Key Contributions</h3>
+                    <ul>
+                        <li><strong>SANS Institute Instructor</strong> - Teaching FOR500 (Windows Forensic Analysis) and FOR528 (Ransomware for Incident Responders)</li>
+                        <li><strong>Forensic 4Cast Award Winner</strong> - "Resource of the Year" 2019 for community contributions</li>
+                        <li><strong>Awesome-BEC Repository</strong> - Comprehensive resource for Business Email Compromise investigations in Office365/AzureAD environments</li>
+                        <li><strong>RULER Project Co-Founder</strong> - Community-driven repository documenting forensic artifacts in application logs</li>
+                        <li><strong>ThisWeekIn4n6.com</strong> - Weekly digest keeping the DFIR community informed about the latest news, tools, and research</li>
+                        <li><strong>ThinkDFIR.com</strong> - Platform for sharing digital forensics insights and research</li>
+                        <li><strong>Community Educator</strong> - Active contributor to open-source DFIR tools and resources</li>
+                    </ul>
+
+                    <h3 style="color: #2c3e50; margin-top: 25px; margin-bottom: 15px;">Popular Projects</h3>
+                    <ul>
+                        <li><strong>Awesome-BEC</strong> - Star repository for BEC investigation resources and techniques</li>
+                        <li><strong>RULER Project</strong> - Collaborative effort to document forensic logging across applications</li>
+                        <li><strong>Keychain Parser</strong> - Perl script for parsing macOS security CLI output into readable format</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Phill Moore | Digital Forensics & Incident Response</p>
+            <p style="margin-top: 10px; font-size: 0.85em; opacity: 0.8;">
+                <a href="https://github.com/randomaccess3" target="_blank" style="color: #fff; text-decoration: none;">GitHub: @randomaccess3</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
